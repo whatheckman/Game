@@ -1,0 +1,13 @@
+from random import randint
+
+guesses = 5
+
+while guesses > 0:
+  num = random.randint(1, 10)
+  guess = raw_input("Guess a number: ")
+  if guess == num:
+    print "You win!"
+    break
+  else:
+    guesses -= 1
+print "You lose."
